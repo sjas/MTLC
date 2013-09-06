@@ -31,10 +31,8 @@ public class Cleaner implements Runnable, Serializable {
 			Process p2 = Runtime.getRuntime().exec(this.cmdcleanaux);
 			p2.waitFor();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}

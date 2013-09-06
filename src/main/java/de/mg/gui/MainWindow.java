@@ -283,7 +283,7 @@ public class MainWindow extends JFrame {
 			{
 				jMenu1 = new JMenu();
 				jMenuBar1.add(jMenu1);
-				jMenu1.setText("Menü");
+				jMenu1.setText("MenÃ¼");
 				{
 					jMenuItem1 = new JMenuItem();
 					jMenu1.add(jMenuItem1);
@@ -342,7 +342,7 @@ public class MainWindow extends JFrame {
 				{
 					jMenuItem3 = new JMenuItem();
 					jMenu2.add(jMenuItem3);
-					jMenuItem3.setText("Über");
+					jMenuItem3.setText("Ãœber");
 					jMenuItem3.addActionListener(new ActionListener() {
 						public void actionPerformed(ActionEvent evt) {
 							displayInfo();

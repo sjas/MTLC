@@ -8,6 +8,7 @@ import java.io.IOException;
 import java.io.Writer;
 
 import de.mg.acquaintance.DOTI;
+import de.mg.main.OSCallHandler;
 import de.mg.main.buisnessobjects.DOT;
 
 public class CompilerController extends Thread implements CompilerControllerI {
@@ -19,8 +20,10 @@ public class CompilerController extends Thread implements CompilerControllerI {
 	private GUIControllerI gui;
 	private boolean initialized;
 	private int[] percent;
+	private OSCallHandler och;
 
-	public CompilerController() {
+	public CompilerController(OSCallHandler och) {
+		this.och = och;
 		this.file = new File("config.cfg");
 		this.or = new OpenPDFReader(this);
 		this.initialized = false;
@@ -40,7 +43,6 @@ public class CompilerController extends Thread implements CompilerControllerI {
 				this.gui.showError("Systemfehler " + e1.getLocalizedMessage(),
 						0);
 			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 			this.compilers = new Compiler[this.dot.getMains().length];
@@ -56,7 +58,7 @@ public class CompilerController extends Thread implements CompilerControllerI {
 			}
 
 		} else {
-			this.gui.showError("Ungültige Konfiguration", 1);
+			this.gui.showError("UngÃ¼ltige Konfiguration", 1);
 		}
 	}
 
@@ -167,7 +169,7 @@ public class CompilerController extends Thread implements CompilerControllerI {
 			Thread t1 = new Thread(this.or);
 			t1.start();
 		} else {
-			this.gui.showError("Ungültige Konfiguration", 1);
+			this.gui.showError("UngÃ¼ltige Konfiguration", 1);
 		}
 	}
 

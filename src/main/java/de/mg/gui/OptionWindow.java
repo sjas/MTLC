@@ -173,7 +173,7 @@ public class OptionWindow extends JDialog {
 	private JLabel getJLabel1() {
 		if (jLabel1 == null) {
 			jLabel1 = new JLabel();
-			jLabel1.setText("<html><body>Art des Kompiliervorgangs hier ausw‰hlen</body></html>");
+			jLabel1.setText("<html><body>Art des Kompiliervorgangs hier ausw√§hlen</body></html>");
 		}
 		return jLabel1;
 	}
@@ -197,7 +197,7 @@ public class OptionWindow extends JDialog {
 	private JLabel getJLabel2() {
 		if (jLabel2 == null) {
 			jLabel2 = new JLabel();
-			jLabel2.setText("<html><body>Konfigurationsdatei ausw‰hlen</body></html>");
+			jLabel2.setText("<html><body>Konfigurationsdatei ausw√§hlen</body></html>");
 		}
 		return jLabel2;
 	}
@@ -231,7 +231,7 @@ public class OptionWindow extends JDialog {
 	private JButton getJButton3() {
 		if (jButton3 == null) {
 			jButton3 = new JButton();
-			jButton3.setText("‹bernehmen");
+			jButton3.setText("√úbernehmen");
 			jButton3.addActionListener(new ActionListener() {
 				public void actionPerformed(ActionEvent evt) {
 					gui.save();
