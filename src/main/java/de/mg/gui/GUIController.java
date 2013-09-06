@@ -116,7 +116,7 @@ public class GUIController implements GUIControllerI {
 		}
 
 		fileopen.setMultiSelectionEnabled(true);
-		int ret = fileopen.showDialog(this.mw, "Öffnen");
+		int ret = fileopen.showDialog(this.mw, "Ã–ffnen");
 
 		if (ret == JFileChooser.APPROVE_OPTION) {
 			File[] files = fileopen.getSelectedFiles();
@@ -136,7 +136,7 @@ public class GUIController implements GUIControllerI {
 		}
 
 		fileopen.setMultiSelectionEnabled(true);
-		int ret = fileopen.showDialog(this.mw, "Öffnen");
+		int ret = fileopen.showDialog(this.mw, "Ã–ffnen");
 
 		if (ret == JFileChooser.APPROVE_OPTION) {
 			File[] files = fileopen.getSelectedFiles();
@@ -152,7 +152,7 @@ public class GUIController implements GUIControllerI {
 			fileopen.setSelectedFile(new File(this.mw.getjTextField4().trim()));
 		}
 		fileopen.addChoosableFileFilter(filter);
-		int ret = fileopen.showDialog(this.mw, "Öffnen");
+		int ret = fileopen.showDialog(this.mw, "Ã–ffnen");
 
 		if (ret == JFileChooser.APPROVE_OPTION) {
 			File file = fileopen.getSelectedFile();
@@ -167,7 +167,7 @@ public class GUIController implements GUIControllerI {
 		if (!this.mw.getjTextField3().trim().equals("")) {
 			fileopen.setSelectedFile(new File(this.mw.getjTextField3().trim()));
 		}
-		int ret = fileopen.showDialog(this.mw, "Öffnen");
+		int ret = fileopen.showDialog(this.mw, "Ã–ffnen");
 
 		if (ret == JFileChooser.APPROVE_OPTION) {
 			File file = fileopen.getSelectedFile();
